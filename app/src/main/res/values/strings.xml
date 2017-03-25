@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">JoKenPo</string>
+    <string name="header">Escolha a opção</string>
+    <string name="ultimajogada">Ultima jogada</string>
+    <string name="voce">Você</string>
+    <string name="android">Android</string>
+    <string name="resultado">Resultado</string>
+    <string name="vitoria">Você venceu</string>
+    <string name="empate">Você empatou</string>
+    <string name="derrota">Você perdeu</string>
+</resources>

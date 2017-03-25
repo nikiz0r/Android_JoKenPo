@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.rumeniguenogueira.jokenpo.GameActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="@string/header"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/btnPedra"
+            android:layout_marginRight="@dimen/btnMargin"
+            android:background="@drawable/pedra"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/btnPapel"
+            android:layout_marginRight="@dimen/btnMargin"
+            android:background="@drawable/papel"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/btnTesoura"
+            android:background="@drawable/tesoura"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="@string/ultimajogada"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_weight="0.5"
+            android:text="@string/voce"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_weight="0.5"
+            android:text="@string/android"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.5"
+            android:id="@+id/ivJogadaPlayer"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.5"
+            android:id="@+id/ivJogadaAndroid"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="@string/resultado"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:id="@+id/tvResultado"
+        tools:text="@string/vitoria"/>
+
+</LinearLayout>
